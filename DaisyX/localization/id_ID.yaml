@@ -393,7 +393,8 @@ STRINGS:
     laporan_already_on: "<b>Laporan sudah diaktifkan.</b>"
     report_turned_on: "Laporan diaktifkan <b>.</b>"
     report_already_off: "<b>Laporan sudah dimatikan.</b>"
-    salah_argument: "<b> Argumen salah. </b>"
+    s
+wrong_argument: "<b> Argumen salah. </b>"
   language:
     your_lang: "Bahasa Anda saat ini: <b>{lang}</b>"
     chat_lang: "Bahasa obrolan saat ini: <b>{lang}</b>"
@@ -404,20 +405,20 @@ STRINGS:
     not_supported_lang: Bahasa ini tidak didukung!
     lang_changed: Bahasa diubah menjadi <b>{lang_name}</b>.
     see_translators: '👥 Lihat penerjemah'
-    belakang: Kembali
+    back: Kembali
   connections:
     pm_connected: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>!"
     connected_pm_to_me: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>! Harap pm saya untuk mulai menggunakan koneksi."
     chat_connection_tlt: "<b>Koneksi obrolan</b>\n"
-    terhubung_chat: |
+    connected_chat: |
       <b>Obrolan terhubung saat ini:</b>
-      {nama_obrolan}
-      Tulis / putuskan sambungan untuk memutuskan sambungan dari obrolan
+      {chat_name}
+      Tulis /disconect untuk memutuskan sambungan dari obrolan
     "connected_chat:cmds": |
       <b>Obrolan terhubung saat ini:</b>
       {chat_name}, (perintah yang dijembatani adalah {commands}),
       <i>Anda hanya dapat mengakses perintah penghubung dari obrolan yang terhubung! Semua perintah lain akan diperlakukan sebagai Obrolan lokal</i>
-      Tulis / putuskan sambungan untuk memutuskan sambungan dari obrolan.
+      Tulis /disconect untuk memutuskan sambungan dari obrolan.
     u_wasnt_connected: "Anda tidak terhubung ke obrolan sebelumnya!"
     select_chat_to_connect: "\n<b>Pilih obrolan untuk dihubungkan:</b>"
     disconnected: "Anda terputus dari <b>{chat_name}</b>."
@@ -448,7 +449,7 @@ STRINGS:
   owner_stuff:
     father: "\nDia adalah pengembangku."
     sudo_crown: "\nHei! LiRightshat, pengguna itu memiliki mahkota, biarkan aku melihatnya... Wow, ia memiliki ukiran - <b>'pengguna sudo'</b>!"
-  stiker:
+  stickers:
     rpl_to_sticker: "Balas stiker!"
     ur_sticker: |
       <b>Emoji:</b> <code>{emoji}</code>
@@ -474,7 +475,7 @@ STRINGS:
     upd_cache: "Memperbarui cache sekarang..."
     upd_cache_done: "Tembolok admin telah diperbarui."
     admin: "<b>Admin di grup ini:</b>\n"
-  impor_ekspor:
+  imports_eksports:
     #Exporting
     start_exporting: Ekspor dimulai! Mohon tunggu...
     export_done: Ekspor dari <b>{chat_name}</b> selesai!
@@ -504,7 +505,7 @@ STRINGS:
     unmute_DaisyX: Sebenarnya, saya tidak bisu.
     unmute_admin: Haha tidak, coba mute dia dulu!
     unmute_self: Haruskah saya membisukan Anda terlebih dahulu?
-    user_unmuted: "{user} disuarakan oleh {admin} di {chat_name}."
+    user_unmuted: "{user} diunmute oleh {admin} di {chat_name}."
     #Bans
     ban_DaisyX: Tidak, saya tidak akan melakukannya! Minta pembuat obrolan untuk melakukannya!
     ban_admin: Haha, ayo <code>/demote</code> dia dulu.
@@ -517,7 +518,7 @@ STRINGS:
     invalid_time: Waktu tidak valid!
     enter_time: Harap tentukan waktunya!
     on_time: "\nUntuk <code>%s</code>"
-    alasan: "\nAlasan: <code>%s</code>"
+    reason: "\nAlasan: <code>%s</code>"
     purge: "\nPesan akan dihapus dalam 5 detik!"
     filter_title_ban: Larang pengguna
     filter_action_rsn: <code>Tindakan filter otomatis!</code>
@@ -534,15 +535,15 @@ STRINGS:
     filter_title_mute: Membisukan pengguna
     filter_title_tban: tBan pengguna
     filter_title_kick: Tendang pengguna
-  aturan:
+  rules:
     #Set
     saved: Aturan disimpan di <b>%s</b>
     updated: Aturan diperbarui dalam <b>%s</b>
-    #Setel ulang
+    #Reset
     reset: Aturan telah dihapus!
     not_found: Aturan tidak ditemukan!
     #Callback
-    user_blocked: "Tulis / mulai di PM saya!"
+    user_blocked: "Tulis /start di PM saya!"
     rules_was_pmed: Aturan telah dikirim ke PM Anda!
   #cannot_find_note: "Saya tidak dapat menemukan catatan <code>{}</code>"
   #set_note: "Berhasil menyetel catatan aturan ke <code>{}</code>"
@@ -587,11 +588,11 @@ STRINGS:
     cleanwelcome_enabled: Sambutan pembersihan diaktifkan di <b>%s</b>
     cleanwelcome_disabled: Sambutan pembersihan dinonaktifkan di <b>%s</b>
     cleanwelcome_status: Sambutan pembersihan adalah <code>{status}</code> di <b>{chat_name}</b>
-    #/layanan kebersihan
+    #/cleanservice
     cleanservice_enabled: Pesan layanan pembersihan diaktifkan di <b>%s</b>
     cleanservice_disabled: Pesan layanan pembersihan dinonaktifkan di <b>%s</b>
     cleanservice_status: Pesan layanan pembersihan <code>{status}</code> di <b>{chat_name}</b>
-    #/selamat datang
+    #/welcomemute
     welcomemute_invalid_arg: Argumen tidak valid, diharapkan waktu.
     welcomemute_enabled: Bisu selamat datang diaktifkan di <b>%s</b>
     welcomemute_disabled: Bisu selamat datang dinonaktifkan di <b>%s</b>
@@ -638,9 +639,9 @@ STRINGS:
   locks:
     locks_header: "Ini adalah pengaturan kunci saat ini di {chat_title} \n\n"
     no_lock_args: Beri saya beberapa argumen untuk dikunci!
-    sudah_locked: Ini sudah terkunci bruh
+    already_locked: Ini sudah terkunci bruh
     no_such_lock: Lihat /locks untuk mengetahui apa yang dapat dikunci dan dibuka!
-    terkunci_berhasil: Mengunci {lock} di {chat} dengan sukses!
+    locked_successfully: Mengunci {lock} di {chat} dengan sukses!
     no_unlock_args: Beri saya beberapa argumen untuk dibuka!
     not_locked: Bruh, tidak terkunci untuk membuka kunci.
     unlocked_successfully: Berhasil membuka {lock} di {chat}!
@@ -670,6 +671,6 @@ STRINGS:
     setfloodaction_success: "Berhasil memperbarui aksi banjir menjadi <b>{action}</b>!"
     
   afk:
-    is_afk: "{pengguna} adalah AFK!\nAlasan: {alasan}"
+    is_afk: "{pengguna} adalah AFK!\nAlasan: {reason}"
     unafk: "{user} bukan AFK lagi!"
     afk_anon: "Mode AFK tidak dapat digunakan sebagai administrator anonim."

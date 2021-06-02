@@ -106,7 +106,7 @@ Permudah admin untuk mengelola pengguna dan grup dengan modul admin!
 <b>Perintah yang tersedia:</b>
 
 <b> Daftar admin </b>
-- /adminList: menunjukkan semua admin di obrolan grup.*
+- /adminlist: menunjukkan semua admin di obrolan grup.*
 - /admincache: Perbarui cache admin, untuk memperhitungkan izin admin/admin baru.*
 
 <b> Mute </b>

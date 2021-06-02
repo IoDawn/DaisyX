@@ -393,8 +393,7 @@ STRINGS:
     laporan_already_on: "<b>Laporan sudah diaktifkan.</b>"
     report_turned_on: "Laporan diaktifkan <b>.</b>"
     report_already_off: "<b>Laporan sudah dimatikan.</b>"
-    s
-wrong_argument: "<b> Argumen salah. </b>"
+    wrong_argument: "<b> Argumen salah. </b>"
   language:
     your_lang: "Bahasa Anda saat ini: <b>{lang}</b>"
     chat_lang: "Bahasa obrolan saat ini: <b>{lang}</b>"

@@ -156,4 +156,4 @@ Permudah admin untuk mengelola pengguna dan grup dengan modul admin!
 *Catatan:
 Saat Anda mempromosikan atau menurunkan admin secara manual, bot mungkin tidak segera menyadarinya. Ini karena untuk menghindari spamming server telegram, status admin di-cache secara lokal.
 Ini berarti bahwa Anda kadang-kadang harus menunggu beberapa menit untuk hak admin untuk memperbarui. Jika Anda ingin segera memperbaruinya, Anda dapat menggunakan perintah /admincache; Itu akan memaksa bot untuk memeriksa siapa admin itu lagi.
-""
+"""

@@ -101,59 +101,59 @@ async def set_chat_photo(_, message):
 __mod_name__ = "Admin"
 
 __help__ = """
-Permudah admin untuk mengelola pengguna dan grup dengan modul admin!
+Make it easy to admins for manage users and groups with the admin module!
 
-<b>Perintah yang tersedia:</b>
+<b>Available commands:</b>
 
-<b> Daftar admin </b>
-- /adminlist: menunjukkan semua admin di obrolan grup.*
-- /admincache: Perbarui cache admin, untuk memperhitungkan izin admin/admin baru.*
+<b> Admin List </b>
+- /adminlist: Shows all admins of the chat.*
+- /admincache: Update the admin cache, to take into account new admins/admin permissions.*
 
-<b> Mute </b>
-- /mute: bisukan pengguna
-- /unmute: berhenti bisukan pengguna
-- /tmute [entitas]: Untuk sementara memberi pengguna untuk interval waktu.
-- /unmuteall: Tanpa Rendam semua anggota yang diredam/mute
+<b> Mutes </b>
+- /mute: mute a user
+- /unmute: unmutes a user
+- /tmute [entity] : temporarily mutes a user for the time interval.
+- /unmuteall: Unmute all muted members
 
 <b> Bans & Kicks </b>
-- /ban: melarang pengguna
-- /tban [entitas]: Menjalankan sementara pengguna untuk interval waktu.
-- /unban: lepas ban Pengguna
-- /unbanall: Unban semua anggota yang dilarang
-- /banme: ban diri anda(khusus yg tau diri)
-- /kick: menendang pengguna
-- /kickme: menendangmu
+- /ban: bans a user
+- /tban [entity] : temporarily bans a user for the time interval.
+- /unban: unbans a user
+- /unbanall: Unban all banned members
+- /banme: Bans you
+- /kick: kicks a user
+- /kickme: Kicks you
 
-<b> Promot & Demote </ b>
-- /promote (pengguna)(title): mempromosikan pengguna ke admin.*
-- /demote (Pengguna): Demot pengguna dari admin.*
-- /lowpromote: Promosikan anggota dengan Hak Rendah*
-- /midpromote: Promosikan anggota dengan Hak menengah*
-- /highpromote: Promosikan anggota dengan Hak Maksimum*
-- /lowdemote: Demote admin ke izin rendah*
-- /middemote: Demote admin ke pertengahan izin*
+<b> Promotes & Demotes</b>
+- /promote (user) (?admin's title): Promotes the user to admin.*
+- /demote (user): Demotes the user from admin.*
+- /lowpromote: Promote a member with low rights*
+- /midpromote: Promote a member with mid rights*
+- /highpromote: Promote a member with max rights*
+- /lowdemote: Demote an admin to low permissions*
+- /middemote: Demote an admin to mid permissions*
 
-<b> Cleaner/Purge </b>
-- /purge: Menghapus semua pesan dari pesan yang Anda jawab
-- /del: menghapus pesan dengan cara dibalas/reply
-- /zombies: Menghitung jumlah akun yang dihapus di grup Anda
-- /kickthefools: Tendang anggota yang tidak aktif dari grup (satu minggu)
+<b> Cleaner/Purges </b>
+- /purge: deletes all messages from the message you replied to
+- /del: deletes the message replied to
+- /zombies: counts the number of deleted account in your group
+- /kickthefools: Kick inactive members from group (one week)
 
-<b> info pengguna </b>
-- /info: Dapatkan Info Pengguna
-- /users: Dapatkan daftar pengguna grup
-- /spwinfo: Periksa info spam pengguna dari Layanan SpamProteksi Inlotivoid
-- /whois: Memberikan info Pengguna Seperti Pyrogram
+<b> User Info </b>
+- /info: Get user's info
+- /users: Get users list of group
+- /spwinfo : Check user's spam info from intellivoid's Spamprotection service
+- /whois : Gives user's info like pyrogram
 
-<b> Lainnya </b>
-- /invitelink: Dapatkan tautan undangan obrolan grup
-- /settitle [entitas][title]: Tetapkan title khusus untuk admin. Jika tidak [titLe] akan menjadi default ke "admin"
-- /setgrouptitle [teks] mengatur grup title
-- /setgrouppic: Balas/reply ke gambar untuk ditetapkan sebagai foto grup
-- /setdescription: set deskripsi grup
-- /setsticker: atur stiker grup
+<b> Other </b>
+- /invitelink: Get chat's invitr link
+- /settitle [entity] [title]: sets a custom title for an admin. If no [title] provided defaults to "Admin"
+- /setgrouptitle [text] set group title
+- /setgrouppic: reply to an image to set as group photo
+- /setdescription: Set group description
+- /setsticker: Set group sticker
 
-*Catatan:
-Saat Anda mempromosikan atau menurunkan admin secara manual, bot mungkin tidak segera menyadarinya. Ini karena untuk menghindari spamming server telegram, status admin di-cache secara lokal.
-Ini berarti bahwa Anda kadang-kadang harus menunggu beberapa menit untuk hak admin untuk memperbarui. Jika Anda ingin segera memperbaruinya, Anda dapat menggunakan perintah /admincache; Itu akan memaksa bot untuk memeriksa siapa admin itu lagi.
+*Note:
+Sometimes, you promote or demote an admin manually, bot doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
+This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /admincache command; that'll force bot to check who the admins are again.
 """
